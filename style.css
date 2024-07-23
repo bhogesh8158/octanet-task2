@@ -1,0 +1,121 @@
+body {
+    font-family: Arial, sans-serif;
+    background: url('https://as1.ftcdn.net/v2/jpg/05/13/59/72/1000_F_513597277_YYqrogAmgRR9ohwTUnOM784zS9eYUcSk.jpg') no-repeat center center fixed;
+    background-size: cover;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+  }
+
+  .container {
+    max-width: 800px;
+    width: 100%;
+    background-color: rgba(255, 255, 255, 0.8);
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    backdrop-filter: blur(10px);
+  }
+
+  h1 {
+    text-align: center;
+    margin-bottom: 20px;
+    color: #333;
+  }
+
+  form {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin-bottom: 20px;
+  }
+
+  form input, form select, form button {
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    width: calc(25% - 10px);
+    box-sizing: border-box;
+    transition: all 0.3s ease;
+  }
+
+  form input:focus, form select:focus, form button:focus {
+    outline: none;
+    border-color: #007bff;
+    box-shadow: 0 0 5px rgba(0, 123, 255, 0.5);
+  }
+
+  form button {
+    background-color: #28a745;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+    margin-top: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  }
+
+  form button:hover {
+    background-color: #218838;
+    box-shadow: 0 6px 8px rgba(0, 0, 0, 0.1);
+  }
+
+  #tasks-container {
+    max-height: 400px;
+    overflow-y: auto;
+  }
+
+  .task {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: #f9f9f9;
+    transition: background-color 0.3s;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+
+  .task.complete {
+    background-color: #d4edda;
+    text-decoration: line-through;
+    color: #777;
+  }
+
+  .task .actions {
+    display: flex;
+    gap: 10px;
+  }
+
+  .task .actions button {
+    padding: 5px 10px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+
+  .task .actions button.complete-btn {
+    background-color: #28a745;
+    color: #fff;
+  }
+
+  .task .actions button.complete-btn:hover {
+    background-color: #218838;
+  }
+
+  .task .actions button.delete-btn {
+    background-color: #dc3545;
+    color: #fff;
+  }
+
+  .task .actions button.delete-btn:hover {
+    background-color: #c82333;
+  }
